@@ -1,3 +1,4 @@
+/* test comment */
 var fs = require("fs"),
     path = require("path"),
     tape = require("tape"),
@@ -17,6 +18,7 @@ tape("axisLeft(scale) has the expected defaults", function(test) {
   test.equal(a.tickPadding(), 3);
   test.end();
 });
+
 
 tape("axis.ticks(arguments…) sets the tick arguments", function(test) {
   var a = d3.axisLeft(d3.scaleLinear()).ticks(20);
